@@ -59,6 +59,9 @@
       margin-right: 0;
       margin-bottom: 40px;
     }
+    @include mobile {
+      flex-basis: 100%;
+    }
     &:last-child {
       margin-right: 0;
     }
