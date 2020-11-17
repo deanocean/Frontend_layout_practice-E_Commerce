@@ -605,6 +605,10 @@ body {
             flex-basis: 50%;
         margin-right: 0;
         margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .about .item {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
     .about .item:last-child {
       margin-right: 0; }
     @media (max-width: 1025px) {
