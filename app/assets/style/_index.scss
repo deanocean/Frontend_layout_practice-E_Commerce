@@ -196,3 +196,118 @@
     }
   }
 }
+
+.recommand {
+  @include rwd-padding-dir(bottom, 64px, 40px, 32px);
+  .list {
+    margin-top: -28px;
+  }
+  .item {
+    margin-top: 28px;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+    &-body {
+      padding: 16px;
+      border: 1px solid #DEE2E6;
+      border-top: none;
+      color: $color-dark;
+    }
+    &-title {
+      font-size: $fz-small;
+      font-weight: $fw-medium;
+    }
+    &-text {
+      @include rwd-margin-dir(top, 7px, 16px);
+    }
+    &-time {
+      display: block;
+      font-size: $fz-small;
+      color: $color-grey;
+      @include rwd-margin-dir(top, 10px, 16px);
+    }
+  }
+}
+
+.contact {
+  background-color: $color-main-light;
+  color: #000;
+  @include pad {
+    padding-bottom: 40px;
+  }
+  @include mobile {
+    padding-bottom: 32px;
+  }
+  .title {
+    @include rwd-margin-dir(bottom, 24px, 16px, 20px);
+  }
+  .content {
+    justify-content: center;
+  }
+  .leading {
+    @include rwd-font-size($fz-medium, $fz-base);
+  }
+  .form {
+    @include rwd-margin-dir(top, 20px, 12px, 8px);
+    label {
+      display: block;
+      @include rwd-margin-dir(bottom, 16px, 8px);
+      @include rwd-font-size($fz-base, $fz-small);
+    }
+    input, textarea {
+      width: 100%;
+      background: none;
+      border: 1px solid #000;
+      line-height: 1.5;
+      @include rwd-font-size($fz-base, $fz-small);
+      @include rwd-padding(14px 16px, 8px 12px);
+      @include rwd-margin-dir(top, 4px, 2px);
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+    .check {
+      margin-left: 4px;
+      text-indent: -20px;
+      padding-left: 20px;
+      input {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        margin-right: 5px;
+      }
+    }
+    &-btn {
+      display: block;
+      margin: 0 auto;
+      @include rwd-margin-dir(top, 40px, 20px, 24px);
+    }
+  }
+}
+
+.btn {
+  width: 350px;
+  padding: 16px;
+  background-color: $color-main;
+  color: #fff;
+  border: none;
+  font-weight: $fw-bold;
+  @include rwd-font-size($fz-base, $fz-small);
+  @include rwd-padding(16px, 8px);
+  @include pad {
+    width: 210px;
+  }
+  @include mobile {
+    width: 165px;
+  }
+  &:hover {
+    background-color: darken($color-main, 10%);
+  }
+}

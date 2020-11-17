@@ -2,7 +2,9 @@ $color-main-dark: #650300;
 $color-main: #AA0601;
 $color-main-light: #AA06010D;
 // $color-main-light: #FBF2F2;
-$color-dark: #111619;
+$color-grey: #707070;
+$color-dark: #212529;
+$color-darker: #111619;
 
 $color-black: #000;
 $color-white: #fff;
@@ -28,3 +30,14 @@ $fw-regular: 400;
 /* ---------- layout ---------- */
 $container: 1110px;
 $gutter: 30px;
+
+
+/* ---------- distance ---------- */
+$distance: 4px;
+@function distance($i) {
+    @return $distance * $i;
+}
+
+.text {
+  width: distance(20);
+}
