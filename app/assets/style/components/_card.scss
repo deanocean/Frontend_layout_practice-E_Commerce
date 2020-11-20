@@ -1,0 +1,31 @@
+.cardList {
+  @include rwd-custom(margin-top, -32px, -20px, -16px);
+  .card {
+    @include rwd-custom(margin-top, 32px, 20px, 16px);
+  }
+}
+
+.card {
+  &-img {
+    @extend .ext-bgi;
+    @include rwd-custom(height, 224px, 164px);
+  }
+  &-title {
+    font-weight: $fw-bold;
+    border: 1px solid #00000020;
+    @include rwd-custom(font-size, $fz-large, $fz-base);
+    @include rwd-custom(padding, 12px 24px, 8px 16px);
+  }
+  &-body {
+    border: 1px solid #00000020;
+    @include rwd-custom(font-size, $fz-medium, $fz-small);
+    @include rwd-custom(padding, 16px 24px, 16px 16px);
+  }
+  &-footer {
+    .btn {
+      width: 100%;
+      font-weight: $fw-regular;
+      @include rwd-custom(padding, 20px, 16px);
+    }
+  }
+}

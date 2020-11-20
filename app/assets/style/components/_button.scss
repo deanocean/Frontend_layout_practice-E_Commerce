@@ -1,0 +1,21 @@
+.btn {  
+  width: 350px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: $fw-bold;
+  cursor: pointer;
+  @include rwd-font-size($fz-base, $fz-small);
+  @include rwd-padding(16px, 8px);
+  &--primary {
+    color: #fff;
+    background-color: $color-main;
+    &:hover {
+      background-color: darken($color-main, 10%);
+    }
+  }
+  &--black {
+    color: #fff;
+    background-color: #000;
+  }
+}

@@ -1,0 +1,30 @@
+.productsPage {
+
+  .content {
+    @include rwd-custom(margin-top, 88px, 40px, 30px);
+  }
+
+  .prodList {
+    @include rwd-custom(padding-top, 40px, 32px, 20px);
+  }
+
+  .pagination {
+    justify-content: center;
+    @include rwd-custom(margin-top, 100px, 105px, 40px);
+  }
+
+  ~ .footer {
+    @include rwd-custom(margin-top, 156px, 104px, 56px);
+  }
+
+  &--sunglasses,
+  &--functional {
+    .pagination {
+      @include rwd-custom(display, none, flex);
+    }
+    ~ .footer {
+      @include rwd-custom(margin-top, 304px, 104px, 56px);
+    }
+  }
+  
+}

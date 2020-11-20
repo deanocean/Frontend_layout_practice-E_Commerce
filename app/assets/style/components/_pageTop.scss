@@ -1,0 +1,16 @@
+.pageTop {
+  @extend .ext-bgi;
+  @include rwd-custom(height, 304px, 304px, 143px);
+  @include pad {
+    background-position: 40% center;
+  }
+  h1 {
+    font-size: $fz-display-2;
+    font-weight: $fw-bold;
+    @include rwd-custom(font-size, $fz-display-2, $fz-display-3, $fz-xlarge);
+    @include rwd-custom(margin-right, 24px, 16px, 8px);
+  }
+  img {
+    @include rwd-custom(width, 40px, 30px, 16px);
+  }
+}

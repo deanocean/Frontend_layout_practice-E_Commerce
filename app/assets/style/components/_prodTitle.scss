@@ -1,0 +1,10 @@
+.prodTitle {
+  text-align: center;
+  font-weight: $fw-medium;
+  @include rwd-custom(font-size, $fz-display-4, $fz-giant, $fz-medium);
+  .sub {
+    display: block;
+    font-weight: $fw-regular;
+    @include rwd-custom(font-size, $fz-giant, $fz-large, $fz-base);
+  }
+}

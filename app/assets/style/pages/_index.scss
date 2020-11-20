@@ -20,7 +20,7 @@
     .sub {
       display: block;
       font-weight: $fw-regular;
-      @include rwd-font-size($fz-display-4, $fz-medium, $fz-base);
+      @include rwd-font-size($fz-display-5, $fz-medium, $fz-base);
     }
   }
 }
@@ -291,26 +291,12 @@
       display: block;
       margin: 0 auto;
       @include rwd-margin-dir(top, 40px, 20px, 24px);
+      @include pad {
+        width: 210px;
+      }
+      @include mobile {
+        width: 165px;
+      }
     }
-  }
-}
-
-.btn {
-  width: 350px;
-  padding: 16px;
-  background-color: $color-main;
-  color: #fff;
-  border: none;
-  font-weight: $fw-bold;
-  @include rwd-font-size($fz-base, $fz-small);
-  @include rwd-padding(16px, 8px);
-  @include pad {
-    width: 210px;
-  }
-  @include mobile {
-    width: 165px;
-  }
-  &:hover {
-    background-color: darken($color-main, 10%);
   }
 }

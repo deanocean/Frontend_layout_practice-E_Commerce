@@ -1,13 +1,25 @@
-@import "variables";
-@import "breakpoint";
-@import "grid";
-@import "extend";
-@import "utilities";
-@import "mixins";
+@import "utils/variables";
+@import "utils/breakpoint";
+@import "utils/grid";
+@import "utils/extend";
+@import "utils/utilities";
+@import "utils/mixins";
 
-@import "reset";
-@import "base";
-@import "layout";
-@import "main";
+@import "base/reset";
+@import "base/base";
 
-@import "index";
+@import "components/button";
+@import "components/pagination";
+@import "components/subMenu";
+@import "components/prodTop";
+@import "components/prodTitle";
+@import "components/prodList";
+@import "components/card";
+@import "components/pageTop";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/index";
+@import "pages/products";
+@import "pages/stores";

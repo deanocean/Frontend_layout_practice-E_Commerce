@@ -3,6 +3,16 @@
 //     font-size:$font-size / $base-font-size +rem;
 // }
 
+@mixin rwd-custom($property, $pc, $pad:null, $mobile:null) {
+    #{$property}: $pc;
+    @include pad {
+        #{$property}: $pad;
+    }
+    @include mobile {
+        #{$property}: $mobile;
+    }
+}
+
 @mixin rwd-font-size($pc, $pad:null, $mobile:null) {
     font-size: $pc;
     @include pad {

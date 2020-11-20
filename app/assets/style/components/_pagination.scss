@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  text-align: center;
+  color: #555555;
+  @include rwd-custom(font-size, 18px, 18px, 12px);
+  @include rwd-custom(height, 48px, 48px, 32px);
+  @include rwd-custom(line-height, 48px, 48px, 32px);
+  > * {
+    border: 1px solid #555555;
+  }
+  a {
+    color: #555555;
+  }
+  .prev, .next {
+    @include rwd-custom(width, 80px, 80px, 53px);
+  }
+  .prev {
+
+  }
+  .page {
+    @include rwd-custom(width, 40px, 40px, 27px);
+    &.active {
+      background-color: #000;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .next {
+    background-color: #F2F2F2;
+  }
+}
