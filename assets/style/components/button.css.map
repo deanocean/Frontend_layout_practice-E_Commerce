@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/button.scss"],"names":[],"mappings":"AAAA;EACE,kBAAkB,EAAA;EAClB;IACE,WAAW;IACX,sBAAsB,EAAA","file":"button.css","sourcesContent":[".btn {\r\n  text-align: center;\r\n  &--black {\r\n    color: #fff;\r\n    background-color: #000;\r\n  }\r\n}\r\n"]}
