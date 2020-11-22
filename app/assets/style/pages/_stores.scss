@@ -1,9 +1,9 @@
 .storesPage {
 
   .selectArea {
-    margin-top: 8px;
     display: flex;
     align-items: center;
+    @include rwd-custom(margin-top, 16px, 8px, 8px);
     @include rwd-custom(margin-bottom, 32px, 24px, 20px);
     .label {
       white-space: nowrap;
@@ -45,8 +45,38 @@
       }
     }
   }
-  
-  ~ .footer {
-    @include rwd-custom(margin-top, 304px, 104px, 56px);
+
+  &--detail {
+
+    .card {
+      @include pad {
+        display: flex;
+        align-items: center;
+        > * {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 100%;
+        }
+        > :last-child {
+          margin-left: $gutter;
+        }
+      }
+      @include mobile {
+        display: block;
+        > :last-child {
+          margin-left: 0;
+        }
+      }
+    }
+    
+    .map {
+      @include rwd-custom(margin-top, 0, 32px, 16px);
+      iframe {
+        width: 100%;
+        @include rwd-custom(height, 100%, 465px, 227px);
+      }
+    }
+
   }
+    
 }

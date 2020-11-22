@@ -1,0 +1,6 @@
+.blogPage {
+  .content {
+    @include rwd-custom(padding-top, 80px, 40px, 24px);
+  }
+  
+}

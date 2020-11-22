@@ -1,0 +1,27 @@
+.prodMenu {
+  display: flex;
+  justify-content: center;
+  font-weight: $fw-medium;
+  a {
+    @extend .ext-flex-center;
+    @extend .ext-has-pseudo;
+    border: 1px solid $color-lightGrey;
+    @include rwd-custom(font-size, $fz-display-4, $fz-xlarge, $fz-small);
+    @include rwd-custom(width, 462px, 33.333333%);
+    @include rwd-custom(height, 105px, 70px, 35px);
+    &.active {
+      &:after {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include rwd-custom(height, 16px, 8px, 4px);
+        background-color: $color-main;
+      }
+    }
+  }
+  .icon {
+    @include rwd-custom(max-width, 48px, 32px, 15px);
+    @include rwd-custom(max-height, 48px, 32px, 15px);
+    @include rwd-custom(margin-right, 8px, 8px, 4px);
+  }
+}

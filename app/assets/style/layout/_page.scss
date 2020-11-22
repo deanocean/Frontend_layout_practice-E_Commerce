@@ -1,0 +1,8 @@
+.page {
+  @include rwd-custom(padding-bottom, 304px, 104px, 56px);
+}
+
+.pagination {
+  justify-content: center;
+  @include rwd-custom(margin-top, 100px, 105px, 40px);
+}

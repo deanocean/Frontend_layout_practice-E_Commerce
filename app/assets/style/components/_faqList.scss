@@ -1,0 +1,22 @@
+.faqList {
+  @include rwd-custom(margin-top, -40px, -40px, -20px);
+  &-question {
+    font-weight: $fw-bold;
+    @include rwd-custom(margin-top, 40px, 40px, 20px);
+    @include rwd-custom(font-size, $fz-medium, $fz-medium, $fz-base);
+  }
+  &-answer {
+    padding-left: 8.33333%;
+    @include mobile {
+      padding-left: 0;
+    }
+    @include rwd-custom(font-size, $fz-base, $fz-base, $fz-small);
+    @include rwd-custom(margin-top, 16px, 16px, 8px);
+    .second {
+      @include mobile {
+        display: inline-block;
+        margin-top: 1em;
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@
   .prev {
 
   }
-  .page {
+  .num {
     @include rwd-custom(width, 40px, 40px, 27px);
     &.active {
       background-color: #000;

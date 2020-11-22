@@ -1,0 +1,65 @@
+.articleList {
+  @include rwd-custom(margin-top, -60px, -32px, -26px);
+}
+
+.articleCard {
+  @include rwd-custom(margin-top, 60px, 32px, 26px);
+  &-img {
+    @extend .ext-bgi;
+    @include rwd-custom(height, 100%, 100%, 193px);
+  }
+  &-title {
+    color: $color-main-dark;
+    @include rwd-custom(font-size, $fz-giant, $fz-medium, $fz-base);
+    @include mobile {
+      margin-top: 8px;
+    }
+  }
+  &-sub {
+    font-weight: $fw-medium;
+    @include rwd-custom(font-size, $fz-medium, $fz-base, $fz-small);
+  }
+  &-date {
+    font-weight: $fw-medium;
+    @include rwd-custom(font-size, $fz-base, $fz-small, $fz-small);
+  }
+  &-content {
+    margin-top: 24px;
+    color: #555555;
+
+    /* text-overflow multiline */
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-overflow multiline */
+
+    @include rwd-custom(font-size, $fz-medium, $fz-small);
+    @include pad {
+      margin-top: 16px;
+      -webkit-line-clamp: 6;
+    }
+    @include mobile {
+      display: none;
+    }
+    .more {
+      color: inherit;
+      font-weight: $fw-bold;
+      display: none;
+      @include pad {
+        display: inline-block;
+      }
+    }
+  }
+  &-link {
+    font-weight: $fw-black;
+    display: block;
+    text-align: right;
+    font-size: $fz-display-5;
+    color: $color-main-dark;
+    @include pad {
+      display: none;
+    }
+  }
+}

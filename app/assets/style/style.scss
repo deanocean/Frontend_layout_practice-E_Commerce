@@ -10,16 +10,22 @@
 
 @import "components/button";
 @import "components/pagination";
-@import "components/subMenu";
+@import "components/prodMenu";
 @import "components/prodTop";
 @import "components/prodTitle";
 @import "components/prodList";
 @import "components/card";
 @import "components/pageTop";
+@import "components/faqList";
+@import "components/articleCard";
+@import "components/subMenu";
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/page";
 
 @import "pages/index";
 @import "pages/products";
 @import "pages/stores";
+@import "pages/blog";
+@import "pages/faq";

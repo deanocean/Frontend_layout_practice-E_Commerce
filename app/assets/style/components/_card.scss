@@ -18,6 +18,8 @@
   }
   &-body {
     border: 1px solid #00000020;
+  }
+  &-content {
     @include rwd-custom(font-size, $fz-medium, $fz-small);
     @include rwd-custom(padding, 16px 24px, 16px 16px);
   }
@@ -28,4 +30,5 @@
       @include rwd-custom(padding, 20px, 16px);
     }
   }
+
 }
