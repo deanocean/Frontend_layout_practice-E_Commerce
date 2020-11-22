@@ -1746,14 +1746,22 @@ h1, h2, h3, h4, h5, h6 {
       .storesPage--detail .map iframe {
         height: 227px; } }
 
-.blogPage .content {
-  padding-top: 80px; }
+.blogPage {
+  padding-bottom: 156px; }
+  .blogPage .content {
+    padding-top: 80px; }
+    @media (max-width: 1025px) {
+      .blogPage .content {
+        padding-top: 40px; } }
+    @media (max-width: 767px) {
+      .blogPage .content {
+        padding-top: 24px; } }
   @media (max-width: 1025px) {
-    .blogPage .content {
-      padding-top: 40px; } }
+    .blogPage {
+      padding-bottom: 104px; } }
   @media (max-width: 767px) {
-    .blogPage .content {
-      padding-top: 24px; } }
+    .blogPage {
+      padding-bottom: 56px; } }
 
 .faqPage .pageTop img {
   width: 58px; }
