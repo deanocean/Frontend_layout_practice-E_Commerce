@@ -1,8 +1,10 @@
 
 /* ---------- layout ---------- */
 .container {
-    max-width: $container;
+    max-width: $container + $gutter;
     margin: 0 auto;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
     @include pad {
         padding: 0 40px;
     }
