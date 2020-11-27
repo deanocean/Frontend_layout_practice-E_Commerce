@@ -65,7 +65,7 @@
     &:last-child {
       margin-right: 0;
     }
-    &--price {
+    &-price {
       @include pad {
         order: 3;
         margin-bottom: 0;
@@ -74,17 +74,17 @@
         margin-bottom: 40px;
       }
     }
-    &--time {
+    &-time {
       @include pad {
         order: 1;
       }
     }
-    &--after {
+    &-after {
       @include pad {
         order: 2;
       }
     }
-    &--glasses {
+    &-glasses {
       @include pad {
         order: 4;
         margin-bottom: 0;
@@ -156,11 +156,15 @@
         justify-content: center;
         color: #fff;
       }
-      img {
-        margin-right: 8px;
-        @include pad {
-          width: 32px;
-        }
+    }
+    &-icon {
+      margin-right: 8px;
+      @include pad {
+        max-width: 32px;
+        max-height: 32px;
+      }
+      @include mobile {
+        filter: brightness(0) invert(100%);
       }
     }
   }

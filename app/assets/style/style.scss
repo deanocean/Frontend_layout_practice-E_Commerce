@@ -8,6 +8,7 @@
 @import "base/reset";
 @import "base/base";
 
+@import "components/page";
 @import "components/button";
 @import "components/pagination";
 @import "components/prodMenu";
@@ -22,7 +23,6 @@
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/page";
 
 @import "pages/index";
 @import "pages/products";
